@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Developer portfolio – backend systems, automation, and scalable software." />
+  <title>Alex Carter — Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <!-- Logo -->
+      <a href="#home" class="navbar__logo" aria-label="Alex Carter home">
+        <span class="navbar__logo-bracket">&lt;</span>AC<span class="navbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="navbar__links" aria-label="Primary navigation">
+        <a href="#home"       class="navbar__link">Home</a>
+        <a href="#about"      class="navbar__link">About</a>
+        <a href="#skills"     class="navbar__link">Skills</a>
+        <a href="#projects"   class="navbar__link">Projects</a>
+        <a href="#experience" class="navbar__link">Experience</a>
+        <a href="#contact"    class="navbar__link">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#contact" class="btn btn--sm btn--primary navbar__cta">Hire Me</a>
+
+      <!-- Hamburger -->
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="navbar__mobile" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <a href="#home"       class="navbar__mobile-link">Home</a>
+      <a href="#about"      class="navbar__mobile-link">About</a>
+      <a href="#skills"     class="navbar__mobile-link">Skills</a>
+      <a href="#projects"   class="navbar__mobile-link">Projects</a>
+      <a href="#experience" class="navbar__mobile-link">Experience</a>
+      <a href="#contact"    class="navbar__mobile-link">Contact</a>
+      <a href="#contact"    class="btn btn--primary navbar__mobile-cta">Hire Me</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <!-- Animated background blobs -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <!-- Mouse-follow glow -->
+      <div class="hero__glow" id="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <!-- Eyebrow -->
+        <div class="hero__eyebrow">
+          <span class="status-dot"></span>
+          Available for freelance work
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero__headline">
+          I Build Software That<br />
+          <span class="gradient-text">Solves Real Problems</span><span class="cursor-blink" aria-hidden="true">_</span>
+        </h1>
+
+        <!-- Sub-headline -->
+        <p class="hero__sub">
+          Backend systems, automation tools, engineering&#8209;focused applications,<br class="hero__sub-break" />
+          and scalable software built to last.
+        </p>
+
+        <!-- CTA row -->
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary btn--lg">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Contact Me</a>
+        </div>
+
+        <!-- Social links -->
+        <div class="hero__socials">
+          <a href="https://github.com/anxhuman-singh" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/anxhuman-singh" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:me@anxhu.dev" class="social-link" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="section about" id="about" aria-label="About">
+      <div class="container">
+        <div class="section-label reveal">About Me</div>
+        <div class="about__grid">
+          <!-- Left column – text -->
+          <div class="about__text">
+            <h2 class="section-heading reveal">
+              Engineering software with<br /><span class="gradient-text">precision and purpose</span>
+            </h2>
+            <p class="about__para reveal">
+              I'm Alex Carter, a software engineer focused on building reliable backend systems and purpose-driven tooling. I don't chase trendy stacks — I pick the right tools for the job and build things that actually work under real-world conditions.
+            </p>
+            <p class="about__para reveal">
+              My approach is deeply rooted in systems thinking: understanding constraints first, architecting clean data flows, and writing code that a future maintainer — including myself — can reason about clearly.
+            </p>
+            <p class="about__para reveal">
+              As a freelancer I've shipped inventory platforms, medical scheduling tools, and internal automation dashboards for clients across industries. Every project starts with one question: <em>what problem are we actually solving?</em>
+            </p>
+            <div class="about__badges reveal">
+              <span class="badge">Problem-First</span>
+              <span class="badge">Systems Thinker</span>
+              <span class="badge">Clean Code</span>
+              <span class="badge">Freelancer</span>
+            </div>
+          </div>
+
+          <!-- Right column – terminal card -->
+          <div class="about__terminal reveal">
+            <div class="terminal">
+              <div class="terminal__bar">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+                <span class="terminal__title">alex@portfolio ~ </span>
+              </div>
+              <div class="terminal__body">
+                <div class="terminal__line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+                <div class="terminal__line t-out">Alex Carter — Software Engineer</div>
+                <div class="terminal__line"><span class="t-prompt">$</span> <span class="t-cmd">cat about.json</span></div>
+                <div class="terminal__line t-out">{</div>
+                <div class="terminal__line t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Backend Engineer"</span>,</div>
+                <div class="terminal__line t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Remote"</span>,</div>
+                <div class="terminal__line t-out">&nbsp;&nbsp;<span class="t-key">"focus"</span>: <span class="t-str">"Scalable Systems"</span>,</div>
+                <div class="terminal__line t-out">&nbsp;&nbsp;<span class="t-key">"available"</span>: <span class="t-bool">true</span></div>
+                <div class="terminal__line t-out">}</div>
+                <div class="terminal__line"><span class="t-prompt">$</span> <span class="t-cursor-blink">▌</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section class="section skills" id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-label reveal">Tech Stack</div>
+        <h2 class="section-heading centered reveal">Tools I build with</h2>
+        <p class="section-sub centered reveal">A focused set of technologies I know deeply, not a laundry list.</p>
+
+        <div class="skills__grid">
+
+          <!-- Programming Languages -->
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="skill-card__title">Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--violet">C++</span>
+              <span class="skill-tag skill-tag--blue">Python</span>
+              <span class="skill-tag skill-tag--yellow">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="skill-card__title">Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--green">Node.js</span>
+              <span class="skill-tag skill-tag--green">Express</span>
+              <span class="skill-tag skill-tag--green">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="skill-card__title">Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--blue">PostgreSQL</span>
+              <span class="skill-tag skill-tag--orange">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--orange">Git</span>
+              <span class="skill-tag skill-tag--violet">Docker</span>
+            </div>
+          </div>
+
+          <!-- Systems & Engineering -->
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="skill-card__title">Systems</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--yellow">Linux</span>
+              <span class="skill-tag skill-tag--green">Shell</span>
+              <span class="skill-tag skill-tag--blue">Networking</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section class="section projects" id="projects" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-label reveal">Work</div>
+        <h2 class="section-heading centered reveal">Featured Projects</h2>
+        <p class="section-sub centered reveal">A selection of real systems built for real use cases.</p>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__header">
+              <div class="project-card__icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 8h14M5 8a2 2 0 1 1 4 0M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8m-9 4h4"/></svg>
+              </div>
+              <div class="project-card__status">Backend</div>
+            </div>
+            <h3 class="project-card__title">Inventory Management System</h3>
+            <p class="project-card__desc">Full-stack platform for tracking stock across multiple warehouses with real-time alerts, reorder triggers, and role-based access control.</p>
+            <div class="project-card__tags">
+              <span>Node.js</span><span>PostgreSQL</span><span>Express</span><span>Docker</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__header">
+              <div class="project-card__icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </div>
+              <div class="project-card__status">Platform</div>
+            </div>
+            <h3 class="project-card__title">Medical Appointment Platform</h3>
+            <p class="project-card__desc">Scheduling and patient-management system for clinics with SMS reminders, calendar sync, and HIPAA-aware data handling.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>PostgreSQL</span><span>REST API</span><span>Linux</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__header">
+              <div class="project-card__icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="project-card__status">Finance</div>
+            </div>
+            <h3 class="project-card__title">Expense Tracker</h3>
+            <p class="project-card__desc">Personal and team finance tool with category tagging, budget envelopes, monthly reports, and CSV export for accountant handoffs.</p>
+            <div class="project-card__tags">
+              <span>Node.js</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__header">
+              <div class="project-card__icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div class="project-card__status">Automation</div>
+            </div>
+            <h3 class="project-card__title">Automation Dashboard</h3>
+            <p class="project-card__desc">Workflow automation runner with a visual pipeline editor, cron scheduling, webhook triggers, and per-run logging with error replay.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>Docker</span><span>Linux</span><span>REST API</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__header">
+              <div class="project-card__icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="project-card__status">SaaS</div>
+            </div>
+            <h3 class="project-card__title">Freelancer CRM</h3>
+            <p class="project-card__desc">Lightweight client-relationship tool built for independent contractors: deal pipeline, invoice generation, time-tracking, and follow-up reminders.</p>
+            <div class="project-card__tags">
+              <span>Node.js</span><span>PostgreSQL</span><span>Express</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__header">
+              <div class="project-card__icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div class="project-card__status">Analytics</div>
+            </div>
+            <h3 class="project-card__title">Analytics Tool</h3>
+            <p class="project-card__desc">Self-hosted web analytics engine that aggregates events, produces funnel reports, and generates weekly digest emails — zero third-party tracking.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>PostgreSQL</span><span>Docker</span><span>Linux</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Live Demo ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE TIMELINE
+    ============================================================ -->
+    <section class="section experience" id="experience" aria-label="Experience">
+      <div class="container">
+        <div class="section-label reveal">Journey</div>
+        <h2 class="section-heading centered reveal">How I got here</h2>
+
+        <div class="timeline">
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <div class="timeline__card">
+              <time class="timeline__time">2019</time>
+              <h3 class="timeline__title">Learning to Program</h3>
+              <p class="timeline__desc">Started with C++ fundamentals, algorithms, and data structures. Built a deep respect for how computers actually work before touching web frameworks.</p>
+              <div class="timeline__tags"><span>C++</span><span>Algorithms</span><span>Linux</span></div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <div class="timeline__card">
+              <time class="timeline__time">2020 – 2021</time>
+              <h3 class="timeline__title">Building Real Projects</h3>
+              <p class="timeline__desc">Shifted to Python and JavaScript to build full systems: REST APIs, database-backed apps, and CLI tooling. Learned by shipping, not by tutorial.</p>
+              <div class="timeline__tags"><span>Python</span><span>Node.js</span><span>PostgreSQL</span></div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <div class="timeline__card">
+              <time class="timeline__time">2022 – 2023</time>
+              <h3 class="timeline__title">Freelance Work</h3>
+              <p class="timeline__desc">Started taking client contracts: inventory systems, medical platforms, internal tools. Learned to scope projects, set expectations, and deliver under real constraints.</p>
+              <div class="timeline__tags"><span>Client Work</span><span>Docker</span><span>Express</span></div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot timeline__dot--active"></div>
+            </div>
+            <div class="timeline__card timeline__card--active">
+              <time class="timeline__time">2024 – Now</time>
+              <h3 class="timeline__title">Current Focus</h3>
+              <p class="timeline__desc">Deepening expertise in distributed systems, building open-source tooling, and working with clients on complex backend challenges. Actively available for new projects.</p>
+              <div class="timeline__tags"><span>Systems Design</span><span>Open Source</span><span>Available</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SERVICES
+    ============================================================ -->
+    <section class="section services" aria-label="Services">
+      <div class="container">
+        <div class="section-label reveal">Services</div>
+        <h2 class="section-heading centered reveal">What I can build for you</h2>
+
+        <div class="services__grid">
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="service-card__title">Backend Development</h3>
+            <p class="service-card__desc">Robust server-side systems with clean architecture, proper error handling, and production-grade reliability.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="service-card__title">Web Applications</h3>
+            <p class="service-card__desc">Full-stack web apps built for scale: clean data models, fast queries, and interfaces that don't get in the way.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="service-card__title">Automation Tools</h3>
+            <p class="service-card__desc">Custom scripts and pipelines that eliminate manual repetitive work, reduce human error, and free up your team.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 9h8M8 13h6"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+            </div>
+            <h3 class="service-card__title">API Development</h3>
+            <p class="service-card__desc">Well-documented, versioned REST APIs designed for integration — easy for developers to consume, hard to misuse.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         STATS
+    ============================================================ -->
+    <section class="section stats" aria-label="Statistics">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <span class="stat__number" data-target="20" data-suffix="+">0</span>
+            <span class="stat__label">Projects Built</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="11" data-suffix="+">0</span>
+            <span class="stat__label">Technologies</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="15" data-suffix="+">0</span>
+            <span class="stat__label">Clients Served</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__number" data-target="5" data-suffix="+">0</span>
+            <span class="stat__label">Years Programming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TESTIMONIALS
+    ============================================================ -->
+    <section class="section testimonials" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-label reveal">Reviews</div>
+        <h2 class="section-heading centered reveal">What clients say</h2>
+
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-card__quote">"Alex rebuilt our inventory system from scratch. The new version handles 10× the volume without breaking a sweat. Genuinely impressed by the architecture choices."</p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+              <div>
+                <div class="testimonial-card__name">Marcus Reid</div>
+                <div class="testimonial-card__role">Operations Director, SupplyLink</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-card__quote">"Delivered the appointment platform two weeks early and under budget. The code is clean enough that our own team could extend it — that's rare with contractor work."</p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">SP</div>
+              <div>
+                <div class="testimonial-card__name">Sarah Patel</div>
+                <div class="testimonial-card__role">Practice Manager, MedCentre</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-card__quote">"The automation dashboard saved us about 15 hours of manual work per week on day one. Alex understood the problem before writing a single line of code."</p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">JK</div>
+              <div>
+                <div class="testimonial-card__name">James Koh</div>
+                <div class="testimonial-card__role">CEO, FlowStack</div>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-label reveal">Get in Touch</div>
+        <h2 class="section-heading centered reveal">Let's build something together</h2>
+        <p class="section-sub centered reveal">Have a project in mind? I'm currently available for freelance engagements.</p>
+
+        <div class="contact__grid">
+
+          <!-- Contact info -->
+          <div class="contact__info reveal">
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">Email</div>
+                <a href="mailto:alex@example.com" class="contact-item__value">alex@example.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">GitHub</div>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-item__value">github.com/alexcarter</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">LinkedIn</div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item__value">linkedin.com/in/alexcarter</a>
+              </div>
+            </div>
+
+            <div class="availability-badge">
+              <span class="status-dot"></span>
+              Currently available for new projects
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact__form-wrap reveal">
+            <div class="contact-form" id="contact-form" role="form" aria-label="Contact form">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" id="name" type="text" placeholder="Your full name" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="email" type="email" placeholder="you@example.com" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input class="form-input" id="subject" type="text" placeholder="Project type or question" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-input form-textarea" id="message" rows="5" placeholder="Describe what you'd like to build…"></textarea>
+              </div>
+              <button class="btn btn--primary btn--full" id="send-btn" type="button">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+              <div class="form-success" id="form-success" aria-live="polite" hidden>
+                ✓ Message sent — I'll get back to you within 24 hours.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#home" class="navbar__logo footer__logo" aria-label="Back to top">
+            <span class="navbar__logo-bracket">&lt;</span>AC<span class="navbar__logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer__tagline">Building software that matters.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#about"      class="footer__link">About</a>
+          <a href="#skills"     class="footer__link">Skills</a>
+          <a href="#projects"   class="footer__link">Projects</a>
+          <a href="#experience" class="footer__link">Experience</a>
+          <a href="#contact"    class="footer__link">Contact</a>
+        </nav>
+
+        <div class="footer__socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:alex@example.com" class="social-link" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Alex Carter. All rights reserved.</p>
+        <p class="footer__made">Built with HTML, CSS &amp; JS — no frameworks</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
